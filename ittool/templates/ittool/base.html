@@ -14,9 +14,9 @@
 
 <body>
     <ul class="nav-bar">
-        <li class="nav-item logo"><a href="#">ITTOOLS</a></li>
+        <li class="nav-item logo"><a href="{% url 'ittool:index' %}">ITTOOLS</a></li>
         <li class="nav-item"><a href="#">Download</a></li>
-        <li class="nav-item"><a href="#">Plugins</a></li>
+        <li class="nav-item"><a href="{% url 'ittool:plugins' %}">Plugins</a></li>
         <li class="nav-item"><a href="#">About</a></li>
     </ul>
     {% block content %}

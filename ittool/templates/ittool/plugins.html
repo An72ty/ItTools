@@ -1,0 +1,15 @@
+{% extends 'ittool/base.html' %}
+
+{% block title %}ITTOOLS - Plugins{% endblock title %}
+
+{% block content %}
+{% for plugin in plugins %}
+<div class="plugin">
+    <p class="plugin plugin-icon"><img src="{{ plugin.icon.url }}"></p>
+    <p class="plugin plugin-name">{{ plugin.name }}</p>
+    <p class="plugin plugin-description">{{ plugin.description }}</p>
+    <p class="plugin plugin-version">{{ plugin.version }}</p>
+    <p class="plugin plugin-date-added">{{ plugin.date_added }}</p>
+</div>
+{% endfor %}
+{% endblock content %}
