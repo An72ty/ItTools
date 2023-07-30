@@ -1,0 +1,23 @@
+body {
+    background-color: #0d1117;
+}
+
+.top-menu {
+    background-color: #0d1117;
+    border: none;
+    color: white;
+    font: 25px 'Verdana';
+    border-bottom: 6px solid white;
+    height: 80px;
+    width: 100%;
+}
+
+.top-menu .logo {
+    align-self: flex-start;
+    width: 40px;
+}
+
+.top-menu .item {
+    width: 40px;
+    padding-right: 30px;
+}

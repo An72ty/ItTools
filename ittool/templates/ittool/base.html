@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>{% block title %}ITTOOLS{% endblock title %}</title>
+</head>
+
+<body>
+    <table class="top-menu">
+        <tr>
+            <th class="logo">ITTOOLS</th>
+            <th class="item">Скачать</th>
+            <th class="item">Плагины</th>
+            <th class="item">О нас</th>
+        </tr>
+    </table>
+    {% block content %}
+    {% endblock content %}
+</body>
+
+</html>
