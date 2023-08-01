@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="..\static\css\style.css">
-        <title>ITTOOLS Web site</title> 
-    </head>
-    <body>
-        <div class="top-panel"></div>
-        <br class="content-separator">
-        <div class="content-panel"></div>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="..\static\css\style.css">
+    <title>ITTOOLS Web site</title>
+</head>
+
+<body>
+    <div class="top-panel">
+        <a href="{% url 'ittool:index' %}">ITTOOLS</a>
+        {% for page in menu %}
+        {% if menu.cat_selected != page%}
+        <a href="{% url page.url %}">{{ page.title }}</a>
+        {% else %}
+        <a>{{ page.title }}</a>
+        {% endif %}
+        {% endfor%}
+    </div>
+    <br class="content-separator">
+    <div class="content-panel">{% block content %}{% endblock content %}</div>
+</body>
+
 </html>
