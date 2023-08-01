@@ -15,9 +15,14 @@
 <body>
     <ul class="nav-bar">
         <li class="nav-item logo"><a href="{% url 'ittool:index' %}">ITTOOLS</a></li>
-        <li class="nav-item"><a href="#">Download</a></li>
-        <li class="nav-item"><a href="{% url 'ittool:plugins' %}">Plugins</a></li>
-        <li class="nav-item"><a href="#">About</a></li>
+        {% for page in menu %}
+        {% if menu.page_selected != page %}
+        <li class="nav-item"><a class="btn btn-purple btn-animate" href="{% url page.url %}">{{ page.title }}</a>
+        </li>
+        {% else %}
+        <li class="nav-item">{{page.title}}</li>
+        {% endif %}
+        {% endfor %}
     </ul>
     {% block content %}
     {% endblock content %}
