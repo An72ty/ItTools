@@ -8,9 +8,10 @@ body {
 
 div.top-panel {
     width: 100%;
-    height: 30px;
+    height: 60px;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
+    border-bottom: white 6px solid;
 }
 
 div.content-panel {
@@ -26,4 +27,90 @@ br.content-separator {
     background-color: white;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
+}
+
+.top-panel .top-panel-item {
+    font-family: Verdana;
+    font-size: 30px;
+    color: white;
+    margin: 10px 18px 0px 0px;
+    float: right;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.top-panel-item.visited {
+    transition: none;
+    background-color: #A500FF;
+
+    border-right: #A500FF 10px solid;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    border-left: #A500FF 10px solid;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.top-panel .top-panel-item.visited:hover {
+    transform: translateY(0px);
+}
+
+.top-panel .top-panel-item.logo {
+    float: left;
+    margin-left: 10px;
+}
+
+.top-panel .top-panel-item:hover {
+    transform: translateY(-3px);
+}
+
+div.plugin {
+    background-color: #161B22;
+    border-radius: 20px;
+    width: 604px;
+    height: 84px;
+}
+
+.plugin .plugin-name {
+    color: #FFFFFF;
+    font-family: Verdana;
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+    float: left;
+    margin: 10px 0px 10px 0px;
+}
+
+.plugin .plugin-version {
+    color: #C2C2C2;
+    font-family: Verdana;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    /* margin: 10px 0px 4px 0px; */
+    float: right;
+    position: relative;
+    top: 50px;
+    right: 470px;
+}
+
+.plugin .plugin-date-added {
+    color: #C2C2C2;
+    font-family: Verdana;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    float: right;
+    margin: 50px 29px 4px 0px;
+    position: relative;
+    left: 52px;
+}
+
+.plugin .plugin-icon {
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    width: 64px;
+    height: 64px;
+    float: left;
 }

@@ -2,10 +2,10 @@ from django.shortcuts import render
 from .models import Plugin
 
 
-menu = [{'title': 'Download', 'url': 'ittool:download'},
-        {'title': 'Plugins', 'url': 'ittool:plugins', },
-        {'title': 'Eternal Arts', 'url': 'ittool:eternal-arts', },
-        {'title': 'About', 'url': 'ittool:about'}
+menu = [{'title': 'Download', 'url': 'ittool:download', 'page_number': 0},
+        {'title': 'Plugins', 'url': 'ittool:plugins', 'page_number': 1},
+        {'title': 'Eternal Arts', 'url': 'ittool:eternal-arts', 'page_number': 2},
+        {'title': 'About', 'url': 'ittool:about', 'page_number': 3}
         ]
 
 

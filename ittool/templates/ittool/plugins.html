@@ -6,11 +6,11 @@
 {% for plugin in plugins %}
 <div class="plugin">
     {% if plugin.icon %}
-    <p class="plugin-icon"><img src="{{ plugin.icon.url }}"></p>
+    <img class="plugin-icon" src="{{ plugin.icon.url }}">
     {% endif %}
-    <p class="plugin-name">{{ plugin.dev_name }}\{{ plugin.name }}</p>
-    <p class="plugin-version">{{ plugin.version }}</p>
-    <p class="plugin-date-added">{{ plugin.date_added }}</p>
+    <a class="plugin-name">{{ plugin.dev_name }}\{{ plugin.name }}</a>
+    <a class="plugin-version">{{ plugin.version }}</a>
+    <a class="plugin-date-added">{{ plugin.date_added|date:'d.m.Y' }}</a>
 </div>
 {% endfor %}
 {% endblock content %}
