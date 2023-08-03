@@ -3,6 +3,16 @@
 {% block title %}ITTOOLS - Plugins{% endblock title %}
 
 {% block content %}
+<form action="{% url 'ittool:plugins' %}" method="get">
+    {% csrf_token %}
+    <input type="text" name="plugin_or_dev_name" class="input-plugin-or-dev-name"
+        placeholder="Write dev name or plugin name">
+    <button class="purple-button" type="submit">Search</button>
+</form>
+
+<br class="content-separator">
+
+{% if plugins %}
 {% for plugin in plugins %}
 <div class="plugin">
     {% if plugin.icon %}
@@ -13,4 +23,29 @@
     <a class="plugin-date-added">{{ plugin.date_added|date:'d.m.Y' }}</a>
 </div>
 {% endfor %}
+{% else %}
+<p class="not-found-message">There're no any plugins</p>
+{% endif %}
+
+<form action="{% url 'ittool:plugins' %}" method="post" class="input-filters">
+    {% csrf_token %}
+    <a class="title">Sort by</a>
+    <p class="input-filters-label">Dev name
+        <input type="checkbox" name="name-filter" id="dev-name" value="dev_name" class="input-filters-input">
+    </p>
+
+    <p class="input-filters-label">Name
+        <input type="checkbox" name="name-filter" id="name" value="name" class="input-filters-input">
+    </p>
+
+    <p class="input-filters-label">First the new
+        <input type="radio" name="date-filter" id="first-the-new" value="date-added" class="input-filters-input">
+    </p>
+
+    <p class="input-filters-label">First the old
+        <input type="radio" name="date-filter" id="first-the-old" value="-date-added" class="input-filters-input">
+    </p>
+
+    <button class="purple-button" type="submit">Sort</button>
+</form>
 {% endblock content %}
