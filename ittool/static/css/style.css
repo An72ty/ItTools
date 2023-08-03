@@ -141,6 +141,11 @@ div.plugin {
     line-height: 36px;
     text-align: center;
     margin: 15px 15px 15px 15px;
+    transition: all .2s;
+}
+
+.purple-button:hover {
+    transform: translateY(-3px);
 }
 
 .not-found-message {
