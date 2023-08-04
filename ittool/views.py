@@ -15,10 +15,11 @@ def index(request):
 
 
 def plugins(request):
+    plugins = Plugin.objects.all()
     if request.method == 'GET':
         plugins_filter = request.GET.get('plugin_or_dev_name')
         name_filter = request.GET.get('name_filter')
-        date_filter = request.GET.get('plugin_or_dev_name')
+        date_filter = request.GET.get('date_filter')
         if plugins_filter:
             plugins = Plugin.objects.filter(
                 name=plugins_filter, dev_name=plugins_filter)
@@ -26,10 +27,6 @@ def plugins(request):
             plugins = Plugin.objects.order_by(name_filter)
         if date_filter:
             plugins = Plugin.objects.order_by(date_filter)
-        else:
-            plugins = Plugin.objects.all()
-    else:
-        plugins = Plugin.objects.all()
 
     context = {'menu': menu, 'page_selected': 1, 'plugins': plugins}
     return render(request, 'ittool/plugins.html', context)
