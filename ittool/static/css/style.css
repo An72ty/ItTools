@@ -217,3 +217,84 @@ footer .footer {
     font-family: Comfortaa;
     padding: 5px 0px 5px 50px;
 }
+
+div .links {
+    float: left;
+    width: 235px;
+    height: 60%;
+    margin: 70px 0px 0px 0px;
+    border-right: 4px solid #FFFFFF;
+    position: relative;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-family: Comfortaa;
+    font-size: 26px;
+    transition: all .2s;
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+
+.link:hover {
+    padding-left: 10px;
+    border-left: 3px #A500FF solid;
+}
+
+.eternal-arts-info {
+    margin: 70px 70px 70px 70px;
+    float: left;
+    color: #FFFFFF;
+    font-family: Comfortaa;
+    background-color: #161B22;
+    border-radius: 30px;
+    width: 757px;
+    height: 332px;
+}
+
+.eternal-arts-icon {
+    float: left;
+    margin: 20px 0px 20px 20px;
+    border-radius: 20px;
+    width: 128px;
+    height: 128px;
+}
+
+.eternal-arts-info-title {
+    margin: 20px 0px 0px 20px;
+    float: left;
+    font-size: 30px;
+    line-height: 39px;
+    text-align: center;
+}
+
+.eternal-arts-info-text {
+    margin: 0px 0px 10px 20px;
+    float: left;
+    font-size: 26px;
+    line-height: 33px;
+    width: 569px;
+    text-align: left;
+}
+
+#count-of-members.eternal-arts-info-text {
+    width: 700px;
+}
+
+.eternal-arts-info-list {
+    float: left;
+    margin: 18px 0px 20px 0px;
+    position: relative;
+    bottom: 10px;
+
+}
+
+.eternal-arts-info-list a {
+    margin: 10px 0px 0px 20px;
+    font-size: 26px;
+    line-height: 33px;
+}

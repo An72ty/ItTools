@@ -33,3 +33,8 @@ def plugins(request):
 
     context = {'menu': menu, 'page_selected': 1, 'plugins': plugins}
     return render(request, 'ittool/plugins.html', context)
+
+
+def eternal_arts(request):
+    context = {'menu': menu, 'page_selected': 2}
+    return render(request, 'ittool/eternal_arts.html', context)
