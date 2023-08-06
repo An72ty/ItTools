@@ -167,7 +167,7 @@ div.plugin {
 .input-filters {
     background-color: #161B22;
     border-radius: 20px;
-    position: fixed;
+    position: relative;
     width: 260px;
     height: 70%;
     margin: 25px 48px 30px 30px;
@@ -208,4 +208,12 @@ div.plugin {
     height: 22px;
     float: right;
     margin-right: 21px;
+}
+
+footer .footer {
+    font-size: 15px;
+    background-color: #161B22;
+    color: #c2c2c2;
+    font-family: Comfortaa;
+    padding: 5px 0px 5px 50px;
 }
