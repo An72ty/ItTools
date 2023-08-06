@@ -29,7 +29,7 @@ br.content-separator {
 }
 
 .top-panel .top-panel-item {
-    font-family: Verdana;
+    font-family: Comfortaa;
     font-size: 30px;
     color: white;
     margin: 10px 18px 0px 0px;
@@ -41,6 +41,7 @@ br.content-separator {
 .top-panel-item.visited {
     transition: none;
     background-color: #A500FF;
+    margin-top: 5px;
 
     border-right: #A500FF 10px solid;
     border-top-right-radius: 40px;
@@ -49,6 +50,9 @@ br.content-separator {
     border-left: #A500FF 10px solid;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
+
+    border-top: #A500FF 5px solid;
+    border-bottom: #A500FF 5px solid;
 }
 
 .top-panel .top-panel-item.visited:hover {
@@ -77,7 +81,7 @@ div.plugin {
 
 .plugin .plugin-name {
     color: #FFFFFF;
-    font-family: Verdana;
+    font-family: Comfortaa;
     font-size: 25px;
     line-height: 32px;
     text-align: center;
@@ -87,7 +91,7 @@ div.plugin {
 
 .plugin .plugin-version {
     color: #C2C2C2;
-    font-family: Verdana;
+    font-family: Comfortaa;
     font-size: 20px;
     line-height: 26px;
     text-align: center;
@@ -95,12 +99,12 @@ div.plugin {
     float: right;
     position: relative;
     top: 50px;
-    right: 470px;
+    right: 482px;
 }
 
 .plugin .plugin-date-added {
     color: #C2C2C2;
-    font-family: Verdana;
+    font-family: Comfortaa;
     font-size: 20px;
     line-height: 26px;
     text-align: center;
@@ -123,20 +127,22 @@ div.plugin {
     border: none;
     border-radius: 10px;
     height: 40px;
-    font-family: Verdana;
+    font-family: Comfortaa;
     font-size: 20px;
     line-height: 26px;
-    width: 322px;
+    width: 330px;
     margin: 25px 0px 0px 30%;
     text-align: left;
 }
 
 .purple-button {
     background-color: #A500FF;
-    border-radius: 40px;
     border: none;
+    border-right: 5px #A500FF solid;
+    border-left: 5px #A500FF solid;
+    border-radius: 40px;
     color: #FFFFFF;
-    font-family: Verdana;
+    font-family: Comfortaa;
     font-size: 28px;
     line-height: 36px;
     text-align: center;
@@ -151,7 +157,7 @@ div.plugin {
 .not-found-message {
     margin: 25px 0px 0px 48px;
     color: #FFFFFF;
-    font-family: Verdana;
+    font-family: Comfortaa;
     font-size: 25px;
     float: right;
     position: relative;
@@ -169,7 +175,7 @@ div.plugin {
 
 .title {
     color: #FFFFFF;
-    font-family: Verdana;
+    font-family: Comfortaa;
     font-size: 28px;
     text-align: center;
 }
@@ -182,7 +188,7 @@ div.plugin {
 
 .input-filters-label {
     color: #FFFFFF;
-    font-family: Verdana;
+    font-family: Comfortaa;
     font-size: 25px;
     line-height: 32px;
     margin: 10px 0px 10px 20px;
