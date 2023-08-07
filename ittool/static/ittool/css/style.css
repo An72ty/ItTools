@@ -89,6 +89,14 @@ div.plugin {
     margin: 10px 0px 10px 0px;
 }
 
+.plugin a.plugin-name {
+    text-decoration: none;
+}
+
+.plugin a.plugin-name:hover {
+    color: #C2C2C2;
+}
+
 .plugin .plugin-version {
     color: #C2C2C2;
     font-family: Comfortaa;

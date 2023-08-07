@@ -18,7 +18,7 @@
     {% if plugin.icon %}
     <img class="plugin-icon" src="{{ plugin.icon.url }}">
     {% endif %}
-    <a class="plugin-name">{{ plugin.dev_name }}\{{ plugin.name }}</a>
+    <a class="plugin-name" href="{{ plugin.get_absolute_url }}">{{ plugin.dev_name }}\{{ plugin.name }}</a>
     <a class="plugin-version">{{ plugin.version }}</a>
     <a class="plugin-date-added">{{ plugin.date_added|date:'d.m.Y' }}</a>
 </div>
