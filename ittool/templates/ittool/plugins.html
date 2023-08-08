@@ -12,22 +12,7 @@
 
 <br class="content-separator">
 
-{% if plugins %}
-{% for plugin in plugins %}
-<div class="plugin">
-    {% if plugin.icon %}
-    <img class="plugin-icon" src="{{ plugin.icon.url }}">
-    {% endif %}
-    <a class="plugin-name" href="{{ plugin.get_absolute_url }}">{{ plugin.dev_name }}\{{ plugin.name }}</a>
-    <a class="plugin-version">{{ plugin.version }}</a>
-    <a class="plugin-date-added">{{ plugin.date_added|date:'d.m.Y' }}</a>
-</div>
-{% endfor %}
-{% else %}
-<p class="not-found-message">There're no any plugins</p>
-{% endif %}
-
-<form action="{% url 'ittool:plugins' %}" method="post" class="input-filters">
+<form action="{% url 'ittool:plugins' %}" method="get" class="input-filters">
     {% csrf_token %}
     <a class="title">Sort by</a>
     <p class="input-filters-label">Dev name
@@ -46,6 +31,23 @@
         <input type="radio" name="date_filter" id="first-the-old" value="-date_added" class="input-filters-input">
     </p>
 
+    <input type="hidden" name="past_plugins" value='{{ plugins }}'>
+
     <button class="purple-button" type="submit">Sort</button>
 </form>
+
+{% if plugins %}
+{% for plugin in plugins %}
+<div class="plugin">
+    {% if plugin.icon %}
+    <img class="plugin-icon" src="{{ plugin.icon.url }}">
+    {% endif %}
+    <a class="plugin-name" href="{{ plugin.get_absolute_url }}">{{ plugin.dev_name }}\{{ plugin.name }}</a>
+    <a class="plugin-version">{{ plugin.version }}</a>
+    <a class="plugin-date-added">{{ plugin.date_added|date:'d.m.Y' }}</a>
+</div>
+{% endfor %}
+{% else %}
+<p class="not-found-message">There're no any plugins</p>
+{% endif %}
 {% endblock content %}

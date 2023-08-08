@@ -74,9 +74,9 @@ div.plugin {
     width: 604px;
     height: 84px;
     margin: 25px 0px 0px 0px;
-    float: right;
     position: relative;
-    right: 28%;
+    left: 26%;
+    bottom: calc(70% + 30px);
 }
 
 .plugin .plugin-name {
