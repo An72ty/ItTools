@@ -24,3 +24,17 @@ class Plugin(models.Model):
 
     def get_absolute_url(self):
         return reverse('ittool:plugin', kwargs={'slug': self.slug})
+
+
+class ItToolsVersion(models.Model):
+    name = models.CharField(max_length=255, verbose_name='Name')
+    version = models.CharField(max_length=10, verbose_name='Version')
+    version_type = models.CharField(max_length=20, verbose_name='Version Type')
+    file = models.FileField(upload_to="files/%Y/%m/%d/", verbose_name='File')
+    date_added = models.DateTimeField(
+        auto_now_add=True, verbose_name='Date added')
+
+    class Meta:
+        verbose_name = 'ITTOOLS Version'
+        verbose_name_plural = 'ITTOOLS Versions'
+        ordering = ['-version']

@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 body {
+    font-family: Comfortaa;
     background-color: #0d1117;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
@@ -29,10 +30,9 @@ br.content-separator {
 }
 
 .top-panel .top-panel-item {
-    font-family: Comfortaa;
     font-size: 30px;
     color: white;
-    margin: 10px 18px 0px 0px;
+    margin: 13px 18px 0px 0px;
     float: right;
     text-decoration: none;
     transition: all .2s;
@@ -41,7 +41,7 @@ br.content-separator {
 .top-panel-item.visited {
     transition: none;
     background-color: #A500FF;
-    margin-top: 5px;
+    margin-top: 8px;
 
     border-right: #A500FF 10px solid;
     border-top-right-radius: 40px;
@@ -81,7 +81,6 @@ div.plugin {
 
 .plugin .plugin-name {
     color: #FFFFFF;
-    font-family: Comfortaa;
     font-size: 25px;
     line-height: 32px;
     text-align: center;
@@ -99,11 +98,9 @@ div.plugin {
 
 .plugin .plugin-version {
     color: #C2C2C2;
-    font-family: Comfortaa;
     font-size: 20px;
     line-height: 26px;
     text-align: center;
-    /* margin: 10px 0px 4px 0px; */
     float: right;
     position: relative;
     top: 50px;
@@ -112,7 +109,6 @@ div.plugin {
 
 .plugin .plugin-date-added {
     color: #C2C2C2;
-    font-family: Comfortaa;
     font-size: 20px;
     line-height: 26px;
     text-align: center;
@@ -135,7 +131,6 @@ div.plugin {
     border: none;
     border-radius: 10px;
     height: 40px;
-    font-family: Comfortaa;
     font-size: 20px;
     line-height: 26px;
     width: 330px;
@@ -150,12 +145,12 @@ div.plugin {
     border-left: 5px #A500FF solid;
     border-radius: 40px;
     color: #FFFFFF;
-    font-family: Comfortaa;
     font-size: 28px;
     line-height: 36px;
     text-align: center;
     margin: 15px 15px 15px 15px;
     transition: all .2s;
+    font-family: Comfortaa;
 }
 
 .purple-button:hover {
@@ -165,7 +160,6 @@ div.plugin {
 .not-found-message {
     margin: 25px 0px 0px 48px;
     color: #FFFFFF;
-    font-family: Comfortaa;
     font-size: 25px;
     float: right;
     position: relative;
@@ -183,7 +177,6 @@ div.plugin {
 
 .title {
     color: #FFFFFF;
-    font-family: Comfortaa;
     font-size: 28px;
     text-align: center;
 }
@@ -196,7 +189,6 @@ div.plugin {
 
 .input-filters-label {
     color: #FFFFFF;
-    font-family: Comfortaa;
     font-size: 25px;
     line-height: 32px;
     margin: 10px 0px 10px 20px;
@@ -222,7 +214,6 @@ footer .footer {
     font-size: 15px;
     background-color: #161B22;
     color: #c2c2c2;
-    font-family: Comfortaa;
     padding: 5px 0px 5px 50px;
 }
 
@@ -240,7 +231,6 @@ div .links {
     color: white;
     margin-left: 30px;
     margin-bottom: 20px;
-    font-family: Comfortaa;
     font-size: 26px;
     transition: all .2s;
     position: relative;
@@ -257,7 +247,6 @@ div .links {
     margin: 70px 70px 70px 70px;
     float: left;
     color: #FFFFFF;
-    font-family: Comfortaa;
     background-color: #161B22;
     border-radius: 30px;
     width: 757px;
@@ -305,4 +294,75 @@ div .links {
     margin: 10px 0px 0px 20px;
     font-size: 26px;
     line-height: 33px;
+}
+
+
+p#downloads-title {
+    color: white;
+    font-size: 40px;
+    margin: 43px 0px 40px 0px;
+    text-align: center;
+}
+
+div.ittools-version {
+    background-color: #161B22;
+    border-radius: 20px;
+    width: 604px;
+    height: 84px;
+    transform: translateX(55%);
+    margin: 0px 0px 20px 0px;
+}
+
+#download.purple-button {
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    float: left;
+}
+
+#download .fa-solid.fa-download.fa-xl {
+    position: relative;
+    top: 15px;
+}
+
+.ittools-version .version-name {
+    color: #FFFFFF;
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+    float: left;
+    margin: 10px 0px 10px 0px;
+}
+
+.ittools-version .version-type {
+    color: #FFFFFF;
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+    float: left;
+    margin: 10px 0px 10px 10px;
+}
+
+.ittools-version .version-version {
+    color: #C2C2C2;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    float: right;
+    position: relative;
+    top: 50px;
+    right: 482px;
+}
+
+.ittools-version .version-date-added {
+    color: #C2C2C2;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    float: right;
+    margin: 50px 29px 4px 0px;
+    position: relative;
+    left: 52px;
 }

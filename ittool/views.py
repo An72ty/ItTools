@@ -1,6 +1,5 @@
 from django.shortcuts import render
-from django.db.models.manager import BaseManager
-from .models import Plugin
+from .models import Plugin, ItToolsVersion
 
 
 menu = [{'title': 'Downloads', 'url': 'ittool:downloads', 'page_number': 0},
@@ -59,7 +58,7 @@ def str_queryset_to_list(model, data) -> list:
 
 
 def index(request):
-    context = {'menu': menu, 'page_selected': -1}
+    context = {'menu': menu}
     return render(request, 'ittool/index.html', context)
 
 
@@ -77,6 +76,7 @@ def plugins(request):
                 elif plugins_filter.lower() in plugin.dev_name.lower():
                     plugins_list.append(plugin)
             plugins = list_to_queryset(Plugin, plugins_list)
+
         if request.GET.get('past_plugins'):
             past_plugins = list_to_queryset(
                 Plugin, str_queryset_to_list(Plugin, request.GET.get('past_plugins')))
@@ -97,3 +97,10 @@ def eternal_arts(request):
 def plugin(request, slug):
     context = {'menu': menu}
     return render(request, 'ittool/index.html', context)
+
+
+def downloads(request):
+    versions = ItToolsVersion.objects.all()
+
+    context = {'menu': menu, 'page_selected': 0, 'versions': versions}
+    return render(request, 'ittool/downloads.html', context)

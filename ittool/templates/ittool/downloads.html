@@ -1,0 +1,20 @@
+{% extends 'ittool/base.html' %}
+
+
+{% block title %}ITTOOLS - Downloads{% endblock title %}
+
+
+{% block content %}
+<p id="downloads-title">Download ITTOOLS</p>
+{% for version in versions %}
+<div class="ittools-version">
+    <a class="purple-button" id="download" href="{{ version.file.url }}" download="{{ version.file.url }}">
+        <i class="fa-solid fa-download fa-xl" style="color: #ffffff;"></i>
+    </a>
+    <a class="version-name">{{ version.name }}</a>
+    <a class="version-type">{{ version.version_type }}</a>
+    <a class="version-version">{{ version.version }}</a>
+    <a class="version-date-added">{{ version.date_added|date:'d.m.Y' }}</a>
+</div>
+{% endfor %}
+{% endblock content %}
