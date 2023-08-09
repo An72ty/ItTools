@@ -38,6 +38,14 @@ br.content-separator {
     transition: all .2s;
 }
 
+.top-panel .top-panel-item:hover {
+    transform: translateY(-3px);
+}
+
+.top-panel .top-panel-item:active {
+    transform: translateY(-1px);
+}
+
 .top-panel-item.visited {
     transition: none;
     background-color: #A500FF;
@@ -62,10 +70,6 @@ br.content-separator {
 .top-panel .top-panel-item.logo {
     float: left;
     margin-left: 10px;
-}
-
-.top-panel .top-panel-item:hover {
-    transform: translateY(-3px);
 }
 
 div.plugin {
@@ -151,10 +155,34 @@ div.plugin {
     margin: 15px 15px 15px 15px;
     transition: all .2s;
     font-family: Comfortaa;
+    position: relative;
 }
 
 .purple-button:hover {
     transform: translateY(-3px);
+}
+
+.purple-button:active {
+    transform: translateY(-1px);
+}
+
+.purple-button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    background-color: #A500FF;
+}
+
+.purple-button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
 }
 
 .not-found-message {
@@ -320,6 +348,10 @@ div.ittools-version {
     border-radius: 10px;
     margin: 10px 10px 10px 10px;
     float: left;
+}
+
+#download.purple-button::after {
+    border-radius: 10px;
 }
 
 #download .fa-solid.fa-download.fa-xl {
