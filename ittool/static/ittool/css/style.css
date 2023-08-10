@@ -159,11 +159,12 @@ div.plugin {
 }
 
 .purple-button:hover {
-    transform: translateY(-3px);
+    transform: translateY(0);
 }
 
 .purple-button:active {
-    transform: translateY(-1px);
+    background-color: #8900d3;
+    border-color: #8900d3;
 }
 
 .purple-button::after {
@@ -226,7 +227,6 @@ div.plugin {
 
 .input-filters .purple-button {
     width: 90px;
-    position: relative;
     top: 25px;
     left: 70px;
 }
@@ -238,11 +238,17 @@ div.plugin {
     margin-right: 21px;
 }
 
-footer .footer {
+footer {
     font-size: 15px;
     background-color: #161B22;
     color: #c2c2c2;
-    padding: 5px 0px 5px 50px;
+    height: 50px;
+}
+
+footer .copyright {
+    position: relative;
+    top: 20px;
+    margin-left: 50px;
 }
 
 div .links {
