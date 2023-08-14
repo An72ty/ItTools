@@ -240,22 +240,24 @@ div.plugin {
     margin-right: 21px;
 }
 
-footer {
-    margin-top: 100%;
+.footer {
+    width: 100%;
+    float: left;
+    margin-top: 100px;
     font-size: 15px;
     background-color: #161B22;
     color: #c2c2c2;
     height: 50px;
 }
 
-footer .copyright {
+.footer .copyright {
     position: relative;
     top: 20px;
     margin-left: 50px;
     float: left;
 }
 
-footer .contact {
+.footer .contact {
     color: #c2c2c2;
     text-decoration: none;
     position: relative;
@@ -264,7 +266,7 @@ footer .contact {
     float: right;
 }
 
-footer .contact:hover {
+.footer .contact:hover {
     color: #696969;
 }
 
