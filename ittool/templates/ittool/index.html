@@ -1,1 +1,38 @@
 {% extends 'ittool/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="preview">
+    <img src="{% static 'ittool/images/code.jpg' %}" class="preview-image">
+    <p class="slogan">ITOOLS is a versatile solution for the IT industry: speed up project creation with a wide range of
+        tools and capabilities!</p>
+
+    <p class="short-description">It provides a wide range of tools and plugins that allow you to speed up and simplify
+        the process of creating applications and websites.</p>
+
+    <a href="{% url 'ittool:downloads' %}" class="purple-button">Download Latest</a>
+</div>
+<div class="description-block">
+    <img src="{% static 'ittool/images/it_field.jpg' %}" class="description-image">
+
+    <p class="description-text">The ITOOLS program is a powerful and versatile solution for the development of projects
+        in the IT field. It provides a wide range of tools and plugins that allow you to speed up and simplify the
+        process of creating applications and websites.</p>
+</div>
+<div class="description-block">
+    <p class="description-text right">One of the main advantages of the program is the ability to install a variety of
+        plugins
+        developed by independent developers. These plugins can significantly expand the functionality of ITOOLS and add
+        new features, for example, for working with databases, graphic design, testing and many others.</p>
+
+    <img src="{% static 'ittool/images/directions.jpg' %}" class="description-image right">
+</div>
+<div class="description-block">
+    <img src="{% static 'ittool/images/coder.jpg' %}" class="description-image">
+
+    <p class="description-text" id="short">In general, ITOOLS is a powerful and flexible platform for project
+        development, which
+        allows you to improve the efficiency and quality of work in the field of IT.</p>
+</div>
+{% endblock content %}

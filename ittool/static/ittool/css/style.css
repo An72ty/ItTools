@@ -143,10 +143,11 @@ div.plugin {
 }
 
 .purple-button {
+    text-decoration: none;
     background-color: #A500FF;
     border: none;
-    border-right: 5px #A500FF solid;
-    border-left: 5px #A500FF solid;
+    border-right: 8px #A500FF solid;
+    border-left: 8px #A500FF solid;
     border-radius: 40px;
     color: #FFFFFF;
     font-size: 28px;
@@ -239,6 +240,7 @@ div.plugin {
 }
 
 footer {
+    margin: 1200px 0px 0px 0px;
     font-size: 15px;
     background-color: #161B22;
     color: #c2c2c2;
@@ -249,6 +251,20 @@ footer .copyright {
     position: relative;
     top: 20px;
     margin-left: 50px;
+    float: left;
+}
+
+footer .contact {
+    color: #c2c2c2;
+    text-decoration: none;
+    position: relative;
+    top: 20px;
+    margin-right: 50px;
+    float: right;
+}
+
+footer .contact:hover {
+    color: #696969;
 }
 
 div .links {
@@ -277,14 +293,14 @@ div .links {
     border-left: 3px #A500FF solid;
 }
 
-.eternal-arts-info {
+div.eternal-arts-info {
     margin: 70px 70px 70px 70px;
     float: left;
     color: #FFFFFF;
     background-color: #161B22;
     border-radius: 30px;
     width: 757px;
-    height: 332px;
+    height: 358px;
 }
 
 .eternal-arts-icon {
@@ -403,4 +419,77 @@ div.ittools-version {
     margin: 50px 29px 4px 0px;
     position: relative;
     left: 52px;
+}
+
+div.preview {
+    height: 100vh;
+    margin-bottom: 60px;
+}
+
+div.preview img.preview-image {
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5;
+}
+
+div.preview .slogan {
+    color: white;
+    font-size: 45px;
+    line-height: 58px;
+    width: 1001px;
+    margin: 55px 0px 0px 50px;
+    text-align: left;
+    position: relative;
+    bottom: 660px;
+}
+
+div.preview .short-description {
+    color: #FFFFFF;
+    font-size: 35px;
+    line-height: 45px;
+    width: 1001px;
+    margin: 50px 0px 0px 50px;
+    text-align: left;
+    position: relative;
+    bottom: 660px;
+}
+
+div.preview .purple-button {
+    border-top: 3px #A500FF solid;
+    border-bottom: 3px #A500FF solid;
+    position: relative;
+    margin: 115px 0px 0px 50px;
+    bottom: 545px;
+}
+
+div.description-block .description-image {
+    position: relative;
+    margin: 40px 20px 40px 50px;
+    border-radius: 10px;
+    width: 256px;
+    height: 256px;
+    opacity: 0.5;
+    float: left;
+}
+
+div.description-block .description-text {
+    position: relative;
+    color: #FFFFFF;
+    font-size: 35px;
+    line-height: 45px;
+    width: 869px;
+    text-align: left;
+    float: left;
+}
+
+div.description-block .description-image.right {
+    margin: 40px 50px 40px 20px;
+}
+
+div.description-block .description-text.right {
+    margin: 0px 0px 0px 50px;
+}
+
+div.description-block #short.description-text {
+    top: 30px;
 }
