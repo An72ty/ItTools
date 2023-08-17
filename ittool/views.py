@@ -58,7 +58,7 @@ def str_queryset_to_list(model, data) -> list:
 
 
 def index(request):
-    context = {'menu': menu}
+    context = {'menu': menu, 'page_selected': -1}
     return render(request, 'ittool/index.html', context)
 
 
@@ -95,7 +95,7 @@ def eternal_arts(request):
 
 
 def plugin(request, slug):
-    context = {'menu': menu}
+    context = {'menu': menu, 'page_selected': -1}
     return render(request, 'ittool/index.html', context)
 
 
@@ -104,3 +104,8 @@ def downloads(request):
 
     context = {'menu': menu, 'page_selected': 0, 'versions': versions}
     return render(request, 'ittool/downloads.html', context)
+
+
+def about(request):
+    context = {'menu': menu, 'page_selected': 3}
+    return render(request, 'ittool/about.html', context)
