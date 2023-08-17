@@ -511,3 +511,61 @@ div.about {
     font-size: 31px;
     line-height: 45px;
 }
+
+div.plugin-large {
+    background-color: #161B22;
+    border-radius: 30px;
+    width: 757px;
+    height: 332px;
+    margin: 50px auto 0px auto;
+}
+
+div.plugin-large img.plugin-icon-large {
+    margin: 20px 20px 20px 20px;
+    border-radius: 20px;
+    width: 128px;
+    height: 128px;
+    float: left;
+}
+
+div.plugin-large .plugin-name-large {
+    color: #FFFFFF;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    float: left;
+    margin: 20px 0px 15px 0px;
+}
+
+div.plugin-large .plugin-version-large {
+    color: #C2C2C2;
+    font-size: 30px;
+    line-height: 39px;
+    width: 569px;
+    text-align: left;
+    float: right;
+    position: relative;
+    right: 20px;
+    margin: 15px 0px 25px 0px;
+}
+
+div.plugin-large .plugin-description-large {
+    color: #FFFFFF;
+    font-size: 26px;
+    line-height: 33px;
+    width: 709px;
+    text-align: left;
+    float: left;
+    margin: 0px 0px 0px 20px;
+}
+
+div.plugin-large .plugin-date-added-large {
+    color: #C2C2C2;
+    font-size: 26px;
+    line-height: 33px;
+    width: 134px;
+    text-align: left;
+    margin: 15px 20px 20px 0px;
+    position: relative;
+    top: 279px;
+}

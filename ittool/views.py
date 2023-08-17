@@ -95,8 +95,10 @@ def eternal_arts(request):
 
 
 def plugin(request, slug):
-    context = {'menu': menu, 'page_selected': -1}
-    return render(request, 'ittool/index.html', context)
+    plugin = Plugin.objects.get(slug=slug)
+
+    context = {'menu': menu, 'page_selected': -1, 'plugin': plugin}
+    return render(request, 'ittool/plugin.html', context)
 
 
 def downloads(request):

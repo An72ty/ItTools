@@ -3,12 +3,12 @@ from django.urls import reverse
 
 
 class Plugin(models.Model):
-    name = models.CharField(max_length=255, verbose_name='Name')
+    name = models.CharField(max_length=15, verbose_name='Name')
     icon = models.ImageField(upload_to="icons/%Y/%m/%d/",
                              blank=True, verbose_name='Icon')
-    description = models.TextField(verbose_name='Description')
+    description = models.TextField(verbose_name='Description', max_length=180)
     dev_name = models.CharField(
-        max_length=255, verbose_name='Developer name')
+        max_length=15, verbose_name='Developer name')
     date_added = models.DateTimeField(
         auto_now_add=True, verbose_name='Date added')
     version = models.CharField(max_length=10, verbose_name='Version')
