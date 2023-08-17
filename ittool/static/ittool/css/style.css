@@ -498,16 +498,16 @@ div.description-block #short.description-text {
 }
 
 div.about {
-    float: left;
     position: relative;
-    bottom: 660px;
-    transform: translateX(55%);
+    bottom: 100vh;
+    text-align: center;
+    width: 614px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .about-text {
     color: #FFFFFF;
     font-size: 31px;
     line-height: 45px;
-    width: 614px;
-    text-align: center;
 }
