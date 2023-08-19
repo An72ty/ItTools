@@ -195,6 +195,7 @@ div.plugin {
     float: right;
     position: relative;
     right: 37%;
+    bottom: calc(70% + 30px);
 }
 
 .input-filters {
@@ -362,8 +363,7 @@ div.ittools-version {
     border-radius: 20px;
     width: 604px;
     height: 84px;
-    transform: translateX(55%);
-    margin: 0px 0px 20px 0px;
+    margin: 0px auto 20px auto;
 }
 
 #download.purple-button {
