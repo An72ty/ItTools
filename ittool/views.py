@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Plugin, ItToolsVersion
 
 
@@ -95,7 +95,7 @@ def eternal_arts(request):
 
 
 def plugin(request, slug):
-    plugin = Plugin.objects.get(slug=slug)
+    plugin = get_object_or_404(Plugin.objects.get(slug=slug))
 
     context = {'menu': menu, 'page_selected': -1, 'plugin': plugin}
     return render(request, 'ittool/plugin.html', context)
