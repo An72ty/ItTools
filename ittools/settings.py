@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-lb!jpp97+^pq=f-sr475zn)hqu7zdsed%u@i^vm)l8oqem&fd9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -80,11 +80,14 @@ WSGI_APPLICATION = 'ittools.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ittools$default',
-        'USER': 'ittools',
-        'PASSWORD': 'ittools_pythonanywhere',
-        'HOST': 'ittools.mysql.pythonanywhere-services.com'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'db.sqlite3'
+
+        # 'ENGINE': 'django.db.backends.mysql',
+        # 'NAME': 'ittools$default',
+        # 'USER': 'ittools',
+        # 'PASSWORD': 'ittools_pythonanywhere',
+        # 'HOST': 'ittools.mysql.pythonanywhere-services.com'
     }
 }
 

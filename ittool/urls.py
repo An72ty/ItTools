@@ -1,13 +1,13 @@
 from django.urls import path
-from .views import index, plugins, eternal_arts, plugin, downloads, about
+from .views import Index, Plugins, EternalArts, ShowPlugin, Downloads, About
 
 
 app_name = 'ittool'
 urlpatterns = [
-    path('', index, name='index'),
-    path('downloads/', downloads, name='downloads'),
-    path('plugins/', plugins, name='plugins'),
-    path('eternal-arts/', eternal_arts, name='eternal-arts'),
-    path('about/', about, name='about'),
-    path('plugin/<slug>/', plugin, name='plugin')
+    path('', Index.as_view(), name='index'),
+    path('downloads/', Downloads.as_view(), name='downloads'),
+    path('plugins/', Plugins.as_view(), name='plugins'),
+    path('eternal-arts/', EternalArts.as_view(), name='eternal-arts'),
+    path('about/', About.as_view(), name='about'),
+    path('plugin/<slug>/', ShowPlugin.as_view(), name='plugin')
 ]
